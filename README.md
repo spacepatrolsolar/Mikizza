@@ -1,5 +1,5 @@
 # Mikizza
-Revival of the Dominos App Featuring Hatsune Miku application for use after the official application was shut down back in 2015/16!
+Revival of the Dominos App Featuring Hatsune Miku (aka Domino’s App feat. 初音ミク -- 宅配ピザのドミノ・ピザ) application for use after the official application was shut down back in 2015/16!
 ```
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣤⣀⣀⠀⠀⣀⡠⠴⠒⠚⠉⠉⠓⠒⠦⣄⣶⠒⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -21,3 +21,4 @@ Revival of the Dominos App Featuring Hatsune Miku application for use after the 
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣶⣶⡿⠀⠀⠀⠀⠀⠀⠉⠁⢸⣶⡟⠁⠀⠾⠟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```
+This project plans to restore all functionality of the original Domino’s App feat. 初音ミク -- 宅配ピザのドミノ・ピザ  such as ordering through the app, the pizza stage AR (modded of course since you can't get the special boxes required to even do the stage in the original app anymore) and the many other functions that were locked behind a long dead server!
