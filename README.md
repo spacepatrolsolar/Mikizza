@@ -21,4 +21,4 @@ Revival of the Dominos App Featuring Hatsune Miku (aka Domino’s App feat. 初�
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠛⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣶⣶⡿⠀⠀⠀⠀⠀⠀⠉⠁⢸⣶⡟⠁⠀⠾⠟⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ```
-This project plans to restore all functionality of the original Domino’s App feat. 初音ミク -- 宅配ピザのドミノ・ピザ  such as ordering through the app, the pizza stage AR (modded of course since you can't get the special boxes required to even do the stage in the original app anymore) and the many other functions that were locked behind a long dead server!
+This project plans to restore all functionality of the original Domino’s App feat. 初音ミク -- 宅配ピザのドミノ・ピザ  such as ordering through the app, the pizza stage AR (modded of course since you can't get the special boxes required to even do the stage in the original app anymore) and the many other functions that were locked behind a long dead server! (we can HOPEFULLY also make the app work on modern systems too!)
