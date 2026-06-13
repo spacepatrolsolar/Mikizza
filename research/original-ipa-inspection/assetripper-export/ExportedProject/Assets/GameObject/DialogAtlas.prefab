@@ -1,0 +1,379 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: DialogAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 7f11a60c4a12491418c383e96ab4e369, type: 2}
+  sprites:
+  - name: img_po_logo
+    outer:
+      serializedVersion: 2
+      x: 563
+      y: 583
+      width: 309
+      height: 153
+    inner:
+      serializedVersion: 2
+      x: 563
+      y: 583
+      width: 309
+      height: 153
+    paddingLeft: 0
+    paddingRight: 0.003236246
+    paddingTop: 0
+    paddingBottom: 0.006535948
+  - name: img_dialog_title_1
+    outer:
+      serializedVersion: 2
+      x: 346
+      y: 179
+      width: 514
+      height: 61
+    inner:
+      serializedVersion: 2
+      x: 346
+      y: 179
+      width: 514
+      height: 61
+    paddingLeft: 0.007782101
+    paddingRight: 0.007782101
+    paddingTop: 0.04918033
+    paddingBottom: 0.06557377
+  - name: img_dialog_content_1
+    outer:
+      serializedVersion: 2
+      x: 692
+      y: 263
+      width: 273
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 692
+      y: 263
+      width: 273
+      height: 91
+    paddingLeft: 0.010989011
+    paddingRight: 0.01831502
+    paddingTop: 0.032967035
+    paddingBottom: 0.043956045
+  - name: img_black
+    outer:
+      serializedVersion: 2
+      x: 346
+      y: 373
+      width: 3
+      height: 3
+    inner:
+      serializedVersion: 2
+      x: 346
+      y: 373
+      width: 3
+      height: 3
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_dialog_content_2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 645
+      width: 562
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 645
+      width: 562
+      height: 91
+    paddingLeft: 0.0035587188
+    paddingRight: 0.0071174377
+    paddingTop: 0.043956045
+    paddingBottom: 0.043956045
+  - name: btn_dialog_goar
+    outer:
+      serializedVersion: 2
+      x: 386
+      y: 469
+      width: 385
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 386
+      y: 469
+      width: 385
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_dialog_title_2
+    outer:
+      serializedVersion: 2
+      x: 554
+      y: 118
+      width: 413
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 554
+      y: 118
+      width: 413
+      height: 60
+    paddingLeft: 0.0072639226
+    paddingRight: 0.012106538
+    paddingTop: 0.05
+    paddingBottom: 0.05
+  - name: btn_dialog_goar_hover
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 911
+      width: 385
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 911
+      width: 385
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_dialog_bg
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 737
+      width: 636
+      height: 287
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 737
+      width: 636
+      height: 287
+    paddingLeft: 0.001572327
+    paddingRight: 0.003144654
+    paddingTop: 0.006968641
+    paddingBottom: 0.006968641
+  - name: btn_dialog_close
+    outer:
+      serializedVersion: 2
+      x: 386
+      y: 586
+      width: 65
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 386
+      y: 586
+      width: 65
+      height: 58
+    paddingLeft: 0
+    paddingRight: 0.015384615
+    paddingTop: 0.01724138
+    paddingBottom: 0.03448276
+  - name: btn_dialog_close_hover
+    outer:
+      serializedVersion: 2
+      x: 452
+      y: 586
+      width: 65
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 452
+      y: 586
+      width: 65
+      height: 58
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_dialog_content_3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 377
+      width: 438
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 377
+      width: 438
+      height: 91
+    paddingLeft: 0.00913242
+    paddingRight: 0.00913242
+    paddingTop: 0.043956045
+    paddingBottom: 0.043956045
+  - name: btn_dialog_ok_hover
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 531
+      width: 385
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 531
+      width: 385
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_dialog_ok
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 797
+      width: 385
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 797
+      width: 385
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_twitter
+    outer:
+      serializedVersion: 2
+      x: 439
+      y: 355
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 439
+      y: 355
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook_hover
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 263
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 263
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_twitter_hover
+    outer:
+      serializedVersion: 2
+      x: 346
+      y: 241
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 346
+      y: 241
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 149
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 149
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_dialog_title_3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 88
+      width: 553
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 88
+      width: 553
+      height: 60
+    paddingLeft: 0.0072332732
+    paddingRight: 0.009041592
+    paddingTop: 0.06666667
+    paddingBottom: 0.06666667
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

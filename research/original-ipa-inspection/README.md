@@ -16,7 +16,7 @@ App metadata:
 Tools used:
 
 - AssetRipper `1.3.14` was downloaded and verified against the release SHA-256.
-- AssetRipper headless and normal startup both stalled before binding the local web server in this environment. The macOS arm64 and x64 release builds both printed the startup banner and then spun without opening a listener.
+- AssetRipper headless startup works on macOS arm64 when boolean flags are passed as switches, for example `--headless --port 51999`. Passing `--headless true` fails because the CLI treats `true` as an extra argument.
 - UnityPy `1.25.0` was used for the scriptable asset extraction fallback. Shader source was exported directly from each shader object's `m_Script` field because UnityPy's generic shader exporter fails on this Unity 4.1.5f1 asset shape.
 - ILSpy `ilspycmd` `10.1.0.8386` was used for .NET/Mono decompilation.
 
@@ -27,6 +27,7 @@ What was exported:
 - `unitypy-export/shaders`: 96 Unity shader source files.
 - `unitypy-export/text-assets`: 15 Unity text assets.
 - `unitypy-export/loose`: 367 loose app resources copied from the bundle, including PNGs, audio, video, plists, strings, nibs, QCAR/Vuforia AR data, and the SQLite database.
+- `assetripper-export`: AssetRipper Unity project export from the same app bundle, including reconstructed Unity scenes, prefabs, materials, meshes, shaders, scripts, project settings, and auxiliary game assemblies.
 - `decompiled-csharp`: decompiled `Assembly-CSharp.dll`.
 - `decompiled-firstpass`: decompiled `Assembly-CSharp-firstpass.dll`.
 - `decompiled-unityscript`: decompiled `Assembly-UnityScript.dll`.
@@ -44,7 +45,9 @@ Useful report files:
 - `unitypy-export/exports.csv`: every exported Unity object and output path.
 - `unitypy-export/failures.csv`: read/export failures and their exact error text.
 - `unitypy-export/loose-assets.csv`: loose bundle resources copied into the output.
+- `assetripper-export/ExportedProject/Assets/_PROJECT/Scenes`: named Unity scene exports such as `Release/Ar/Ar.unity`, `Release/Ar2/Ar2.unity`, and `Release/Portrait/Portrait.unity`.
+- `source/dominos.ipa`: local source IPA copy matching the SHA-256 above.
 
 Next pass:
 
-- See `tooling-next-pass.md` for the follow-up extraction plan, including AssetRipper version triage, Rosetta/x64 considerations, alternative Unity asset tools, and manual extraction options.
+- Use the AssetRipper export to map scene names, prefabs, scripts, and assets back to the revival-critical AR and portrait flows. See `tooling-next-pass.md` for the follow-up extraction plan, including Rosetta/x64 considerations, alternative Unity asset tools, and manual extraction options.

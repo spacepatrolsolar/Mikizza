@@ -1,0 +1,464 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: TutLowAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 36fe022b251d80344991613ab1d92fe4, type: 2}
+  sprites:
+  - name: img_po_tut_icon
+    outer:
+      serializedVersion: 2
+      x: 537
+      y: 262
+      width: 196
+      height: 222
+    inner:
+      serializedVersion: 2
+      x: 537
+      y: 262
+      width: 196
+      height: 222
+    paddingLeft: 0.030612245
+    paddingRight: 0.020408163
+    paddingTop: 0.018018018
+    paddingBottom: 0.018018018
+  - name: img_po_tut_content_2
+    outer:
+      serializedVersion: 2
+      x: 489
+      y: 764
+      width: 431
+      height: 260
+    inner:
+      serializedVersion: 2
+      x: 489
+      y: 764
+      width: 431
+      height: 260
+    paddingLeft: 0.006960557
+    paddingRight: 0.009280742
+    paddingTop: 0.011538462
+    paddingBottom: 0.011538462
+  - name: img_black
+    outer:
+      serializedVersion: 2
+      x: 526
+      y: 481
+      width: 3
+      height: 3
+    inner:
+      serializedVersion: 2
+      x: 526
+      y: 481
+      width: 3
+      height: 3
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_tut_content_bot
+    outer:
+      serializedVersion: 2
+      x: 434
+      y: 110
+      width: 460
+      height: 16
+    inner:
+      serializedVersion: 2
+      x: 434
+      y: 110
+      width: 460
+      height: 16
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: white
+    outer:
+      serializedVersion: 2
+      x: 895
+      y: 116
+      width: 10
+      height: 10
+    inner:
+      serializedVersion: 2
+      x: 895
+      y: 116
+      width: 10
+      height: 10
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_ar_tut_content_1
+    outer:
+      serializedVersion: 2
+      x: 526
+      y: 485
+      width: 482
+      height: 121
+    inner:
+      serializedVersion: 2
+      x: 526
+      y: 485
+      width: 482
+      height: 121
+    paddingLeft: 0.004149378
+    paddingRight: 0.008298756
+    paddingTop: 0.03305785
+    paddingBottom: 0.03305785
+  - name: img_ar_tut_content_2
+    outer:
+      serializedVersion: 2
+      x: 142
+      y: 16
+      width: 131
+      height: 40
+    inner:
+      serializedVersion: 2
+      x: 142
+      y: 16
+      width: 131
+      height: 40
+    paddingLeft: 0.022900764
+    paddingRight: 0.030534351
+    paddingTop: 0.075
+    paddingBottom: 0.1
+  - name: btn_tut_back
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 189
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 64
+      width: 189
+      height: 136
+    paddingLeft: 0.005291005
+    paddingRight: 0.01058201
+    paddingTop: 0.007352941
+    paddingBottom: 0.014705882
+  - name: img_bg_bottom_tut
+    outer:
+      serializedVersion: 2
+      x: 906
+      y: 117
+      width: 9
+      height: 9
+    inner:
+      serializedVersion: 2
+      x: 906
+      y: 117
+      width: 9
+      height: 9
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_ar_tut_icon
+    outer:
+      serializedVersion: 2
+      x: 734
+      y: 264
+      width: 196
+      height: 220
+    inner:
+      serializedVersion: 2
+      x: 734
+      y: 264
+      width: 196
+      height: 220
+    paddingLeft: 0.030612245
+    paddingRight: 0.015306123
+    paddingTop: 0.018181818
+    paddingBottom: 0.013636364
+  - name: img_ar_tut_content_3
+    outer:
+      serializedVersion: 2
+      x: 924
+      y: 68
+      width: 45
+      height: 195
+    inner:
+      serializedVersion: 2
+      x: 924
+      y: 68
+      width: 45
+      height: 195
+    paddingLeft: 0.044444446
+    paddingRight: 0.06666667
+    paddingTop: 0.010256411
+    paddingBottom: 0.015384615
+  - name: btn_tut_back_hover
+    outer:
+      serializedVersion: 2
+      x: 734
+      y: 127
+      width: 189
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 734
+      y: 127
+      width: 189
+      height: 136
+    paddingLeft: 0.005291005
+    paddingRight: 0.01058201
+    paddingTop: 0.007352941
+    paddingBottom: 0.014705882
+  - name: img_ar_tut_content_4
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 750
+      width: 488
+      height: 274
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 750
+      width: 488
+      height: 274
+    paddingLeft: 0.0040983604
+    paddingRight: 0.008196721
+    paddingTop: 0.010948905
+    paddingBottom: 0.01459854
+  - name: unitedSansExt-light
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 617
+      width: 321
+      height: 23
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 617
+      width: 321
+      height: 23
+    paddingLeft: 0.0062305294
+    paddingRight: 0.58878505
+    paddingTop: 0.08695652
+    paddingBottom: 1.6956521
+  - name: img_po_tut_content_1_2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 361
+      width: 536
+      height: 115
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 361
+      width: 536
+      height: 115
+    paddingLeft: 0.0074626864
+    paddingRight: 0.009328358
+    paddingTop: 0.034782607
+    paddingBottom: 0.034782607
+  - name: img_logo_domino
+    outer:
+      serializedVersion: 2
+      x: 434
+      y: 7
+      width: 125
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 434
+      y: 7
+      width: 125
+      height: 60
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: img_ar_tut_content_2_2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 9
+      width: 141
+      height: 54
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 9
+      width: 141
+      height: 54
+    paddingLeft: 0.021276595
+    paddingRight: 0.035460994
+    paddingTop: 0.074074075
+    paddingBottom: 0.074074075
+  - name: img_ar_tut_content_4_2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 477
+      width: 525
+      height: 129
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 477
+      width: 525
+      height: 129
+    paddingLeft: 0.0038095238
+    paddingRight: 0.0057142857
+    paddingTop: 0.015503876
+    paddingBottom: 0.023255814
+  - name: img_dialog_content_3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 269
+      width: 438
+      height: 91
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 269
+      width: 438
+      height: 91
+    paddingLeft: 0.00913242
+    paddingRight: 0.00913242
+    paddingTop: 0.043956045
+    paddingBottom: 0.043956045
+  - name: img_dialog_title_3
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 201
+      width: 553
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 201
+      width: 553
+      height: 60
+    paddingLeft: 0.0072332732
+    paddingRight: 0.009041592
+    paddingTop: 0.06666667
+    paddingBottom: 0.06666667
+  - name: btn_pink
+    outer:
+      serializedVersion: 2
+      x: 489
+      y: 607
+      width: 509
+      height: 156
+    inner:
+      serializedVersion: 2
+      x: 489
+      y: 607
+      width: 509
+      height: 156
+    paddingLeft: 0.009823183
+    paddingRight: 0.009823183
+    paddingTop: 0.0064102565
+    paddingBottom: 0.01923077
+  - name: select_dance_text
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 641
+      width: 457
+      height: 108
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 641
+      width: 457
+      height: 108
+    paddingLeft: 0.008752735
+    paddingRight: 0.008752735
+    paddingTop: 0.018518519
+    paddingBottom: 0.037037037
+  - name: luv_4_night
+    outer:
+      serializedVersion: 2
+      x: 190
+      y: 57
+      width: 243
+      height: 69
+    inner:
+      serializedVersion: 2
+      x: 190
+      y: 57
+      width: 243
+      height: 69
+    paddingLeft: 0.004115226
+    paddingRight: 0.020576132
+    paddingTop: 0.028985508
+    paddingBottom: 0.028985508
+  - name: ever_green
+    outer:
+      serializedVersion: 2
+      x: 190
+      y: 135
+      width: 256
+      height: 65
+    inner:
+      serializedVersion: 2
+      x: 190
+      y: 135
+      width: 256
+      height: 65
+    paddingLeft: 0.00390625
+    paddingRight: 0.0078125
+    paddingTop: 0.015384615
+    paddingBottom: 0.046153847
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

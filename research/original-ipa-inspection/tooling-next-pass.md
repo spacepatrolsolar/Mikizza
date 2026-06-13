@@ -8,13 +8,14 @@ This note keeps the next extraction experiments portable. Do not commit download
 - App version: `1.15`
 - Unity version: `4.1.5f1`
 - UnityPy baseline: `tools/extract_unity_assets.py` exported 201 Unity objects and copied 367 loose bundle assets.
+- AssetRipper baseline: macOS arm64 `1.3.14` exported a Unity-project-shaped tree to `assetripper-export`.
 - Remaining UnityPy failures are low-value default resources plus one embedded `AudioClip` named `kasha`. The app also ships `kasha.mp3` as a loose resource.
 
 ## Tool candidates
 
 | Tool | Best use here | macOS fit | Notes |
 | --- | --- | --- | --- |
-| [AssetRipper](https://github.com/AssetRipper/AssetRipper/releases) | Best chance at reconstructing Unity project structure, scenes, prefabs, materials, and script bindings beyond raw asset export. | Native mac arm64 and mac x64 release assets are available in current releases. | `1.3.14` has relevant Unity-pre-5.5 changes: 32-bit file IDs before Unity 5.5 and shader script display before Unity 5.5. Previous local arm64 and x64 starts printed the banner but did not bind a listener. |
+| [AssetRipper](https://github.com/AssetRipper/AssetRipper/releases) | Best chance at reconstructing Unity project structure, scenes, prefabs, materials, and script bindings beyond raw asset export. | Native mac arm64 and mac x64 release assets are available in current releases. | `1.3.14` has relevant Unity-pre-5.5 changes: 32-bit file IDs before Unity 5.5 and shader script display before Unity 5.5. macOS arm64 export succeeded when driven through the local web API. |
 | [AssetStudio](https://github.com/Perfare/AssetStudio/releases) | Cross-check readable Unity assets and possibly recover asset names or previews that UnityPy misses. | No native macOS release; latest published builds are .NET/Windows-oriented. | Useful as a Windows or VM fallback. Older `UnityStudio` releases may be closer in age to Unity 4-era assets, but they are also Windows-era GUI tools. |
 | [UABE](https://github.com/SeriousCache/UABE/releases) | Manual inspection/editing of serialized Unity assets and type trees. | Windows release binaries only. | Better as a Windows fallback than a first local macOS attempt. |
 | [UABEA](https://github.com/nesrak1/UABEA/releases) | Manual asset database inspection with newer AssetsTools.NET behavior. | Current releases provide Windows and Linux builds, not macOS builds. | Possible VM/container fallback, but less direct than AssetRipper on this Mac. |
@@ -32,23 +33,24 @@ Local checks on this machine showed:
 - `mono`: not found
 - `wine`: not found
 
-That means mac x64 AssetRipper can be tested through Rosetta, but Windows-only tools should not be treated as locally runnable without adding Wine, Mono, a Windows VM, or a separate Windows machine. If the x64 AssetRipper build is retried, run it explicitly under `arch -x86_64` and verify whether a listener appears before concluding that the binary is unusable.
+That means mac x64 AssetRipper can be tested through Rosetta, but Windows-only tools should not be treated as locally runnable without adding Wine, Mono, a Windows VM, or a separate Windows machine. Since the macOS arm64 AssetRipper export now succeeds, only test the x64 build if a specific arm64-export defect shows up.
 
 ## Recommended sequence
 
-1. Re-run AssetRipper locally with a controlled timeout and a port/listener check.
-   - Test the current mac arm64 release first.
-   - Test the current mac x64 release explicitly through Rosetta second.
-   - Capture the exact command, version, exit behavior, and whether a local listener appears.
+1. Use the committed AssetRipper export as the primary Unity reconstruction source.
+   - Start with named scenes under `assetripper-export/ExportedProject/Assets/_PROJECT/Scenes`.
+   - Map scenes to prefabs, scripts, materials, meshes, textures, and audio.
+   - Treat the UnityPy export as the raw extraction cross-check.
 
-2. Try one older AssetRipper line only if the current line still stalls.
+2. Re-run AssetRipper locally only when the export needs to be regenerated.
+   - Use `--headless --port <port>`, not `--headless true`.
+   - POST the unpacked `Payload/domino.app` folder to `/LoadFolder` with form field `path`.
+   - POST the output directory to `/Export/UnityProject` with form field `path`.
+
+3. Try one older AssetRipper line only if the current line exposes a concrete defect.
    - Start with `1.2.1`, because its release notes call out embedded web dependencies.
    - If that fails the same way, try `1.1.13` or the last pre-Photino release line only as a GUI/runtime comparison.
    - Keep all downloads and unpacked binaries under a temporary path outside the repository.
-
-3. If AssetRipper can import the app bundle, export project-like output into a temporary directory first.
-   - Compare scene, prefab, material, texture, mesh, shader, audio, and script counts against `unitypy-export/summary.txt`.
-   - Commit only curated reports or extracted assets that are needed for revival work.
 
 4. If AssetRipper remains blocked, extend the UnityPy path instead of chasing GUI tools.
    - Add a structured object relationship report for `GameObject`, `Transform`, `MeshFilter`, `MeshRenderer`, `Material`, `MonoBehaviour`, `Camera`, and `Light`.

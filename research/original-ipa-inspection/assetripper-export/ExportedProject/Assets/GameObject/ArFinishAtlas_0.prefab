@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: ArFinishAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: 9c0c4c200486da049bc82de780da9708, type: 2}
+  sprites:
+  - name: btn_twitter
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 16
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_mikubaku_back
+    outer:
+      serializedVersion: 2
+      x: 479
+      y: 375
+      width: 523
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 479
+      y: 375
+      width: 523
+      height: 137
+    paddingLeft: 0.0019120459
+    paddingRight: 0.0038240917
+    paddingTop: 0.00729927
+    paddingBottom: 0.01459854
+  - name: btn_ar_again
+    outer:
+      serializedVersion: 2
+      x: 479
+      y: 237
+      width: 523
+      height: 137
+    inner:
+      serializedVersion: 2
+      x: 479
+      y: 237
+      width: 523
+      height: 137
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_ar_finish_2
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 358
+      width: 478
+      height: 154
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 358
+      width: 478
+      height: 154
+    paddingLeft: 0.0041841003
+    paddingRight: 0.008368201
+    paddingTop: 0.019480519
+    paddingBottom: 0.019480519
+  - name: img_black
+    outer:
+      serializedVersion: 2
+      x: 966
+      y: 151
+      width: 3
+      height: 3
+    inner:
+      serializedVersion: 2
+      x: 966
+      y: 151
+      width: 3
+      height: 3
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 130
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 130
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_ar_finish_p2
+    outer:
+      serializedVersion: 2
+      x: 692
+      y: 155
+      width: 274
+      height: 81
+    inner:
+      serializedVersion: 2
+      x: 692
+      y: 155
+      width: 274
+      height: 81
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_ar_finish_p1
+    outer:
+      serializedVersion: 2
+      x: 692
+      y: 73
+      width: 273
+      height: 81
+    inner:
+      serializedVersion: 2
+      x: 692
+      y: 73
+      width: 273
+      height: 81
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_facebook_hover
+    outer:
+      serializedVersion: 2
+      x: 346
+      y: 123
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 346
+      y: 123
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_twitter_hover
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 244
+      width: 345
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 244
+      width: 345
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0

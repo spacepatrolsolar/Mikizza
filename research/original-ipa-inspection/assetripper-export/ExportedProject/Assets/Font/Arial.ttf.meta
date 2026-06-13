@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 0298a14f0a45d2a45853438077e263c0
+timeCreated: 1781361691
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 2
+  name:
+  fontSize: 13
+  fontColor: {r: 0, g: 0, b: 0, a: 0}
+  forceTextureCase: -2
+  characterSpacing: 1
+  characterPadding: 0
+  includeFontData: 1
+  use2xBehaviour: 0
+  fontNames:
+  - Arial
+  customCharacters:
+  fontRenderingMode: 0
+  output:
+    hasEmptyFontData: 0
+  userData:

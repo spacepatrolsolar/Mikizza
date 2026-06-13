@@ -1,0 +1,311 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &147589
+GameObject:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_Component:
+  - 4: {fileID: 479954}
+  - 114: {fileID: 11409266}
+  m_Layer: 0
+  m_Name: TutHighAtlas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479954
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11409266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03f7db9a480b403690a4a83220213122, type: 3}
+  m_Name:
+  material: {fileID: 2100000, guid: beb60fd49e30b544f9aba89cb7b11257, type: 2}
+  sprites:
+  - name: img_bg_tut
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 97
+      width: 636
+      height: 927
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 97
+      width: 636
+      height: 927
+    paddingLeft: 0.001572327
+    paddingRight: 0.003144654
+    paddingTop: 0.0021574972
+    paddingBottom: 0.0021574972
+  - name: img_logo_domino
+    outer:
+      serializedVersion: 2
+      x: 484
+      y: 36
+      width: 125
+      height: 60
+    inner:
+      serializedVersion: 2
+      x: 484
+      y: 36
+      width: 125
+      height: 60
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: unitedSansExt-light
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 321
+      height: 23
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 5
+      width: 321
+      height: 23
+    paddingLeft: 0.0062305294
+    paddingRight: 0.58878505
+    paddingTop: 0.08695652
+    paddingBottom: 1.6956521
+  - name: img_tut_downloading
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 29
+      width: 483
+      height: 33
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 29
+      width: 483
+      height: 33
+    paddingLeft: 0.004140787
+    paddingRight: 0.008281574
+    paddingTop: 0.060606062
+    paddingBottom: 0.121212125
+  - name: img_tut_loading
+    outer:
+      serializedVersion: 2
+      x: 484
+      y: 4
+      width: 149
+      height: 31
+    inner:
+      serializedVersion: 2
+      x: 484
+      y: 4
+      width: 149
+      height: 31
+    paddingLeft: 0.013422819
+    paddingRight: 0.020134227
+    paddingTop: 0.06451613
+    paddingBottom: 0.09677419
+  - name: btn_tut_back
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 19
+      width: 189
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 19
+      width: 189
+      height: 136
+    paddingLeft: 0.005291005
+    paddingRight: 0.01058201
+    paddingTop: 0.007352941
+    paddingBottom: 0.014705882
+  - name: btn_tut_back_hover
+    outer:
+      serializedVersion: 2
+      x: 827
+      y: 19
+      width: 189
+      height: 136
+    inner:
+      serializedVersion: 2
+      x: 827
+      y: 19
+      width: 189
+      height: 136
+    paddingLeft: 0.005291005
+    paddingRight: 0.01058201
+    paddingTop: 0.007352941
+    paddingBottom: 0.014705882
+  - name: img_tut_downloading_yellow
+    outer:
+      serializedVersion: 2
+      x: 0
+      y: 63
+      width: 483
+      height: 33
+    inner:
+      serializedVersion: 2
+      x: 0
+      y: 63
+      width: 483
+      height: 33
+    paddingLeft: 0.004140787
+    paddingRight: 0.008281574
+    paddingTop: 0.060606062
+    paddingBottom: 0.121212125
+  - name: img_dialog_bg_2
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 388
+      width: 287
+      height: 636
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 388
+      width: 287
+      height: 636
+    paddingLeft: 0.006968641
+    paddingRight: 0.006968641
+    paddingTop: 0.001572327
+    paddingBottom: 0.003144654
+  - name: btn_dialog_ok
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 156
+      width: 385
+      height: 113
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 156
+      width: 385
+      height: 113
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_dialog_close_hover
+    outer:
+      serializedVersion: 2
+      x: 925
+      y: 858
+      width: 65
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 925
+      y: 858
+      width: 65
+      height: 58
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_dialog_close
+    outer:
+      serializedVersion: 2
+      x: 925
+      y: 917
+      width: 65
+      height: 58
+    inner:
+      serializedVersion: 2
+      x: 925
+      y: 917
+      width: 65
+      height: 58
+    paddingLeft: 0
+    paddingRight: 0.015384615
+    paddingTop: 0.01724138
+    paddingBottom: 0.03448276
+  - name: img_white
+    outer:
+      serializedVersion: 2
+      x: 1017
+      y: 152
+      width: 3
+      height: 3
+    inner:
+      serializedVersion: 2
+      x: 1018
+      y: 153
+      width: 1
+      height: 1
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  - name: btn_pink
+    outer:
+      serializedVersion: 2
+      x: 637
+      y: 270
+      width: 386
+      height: 117
+    inner:
+      serializedVersion: 2
+      x: 637
+      y: 270
+      width: 386
+      height: 117
+    paddingLeft: 0.005181347
+    paddingRight: 0.0025906735
+    paddingTop: 0.008547009
+    paddingBottom: 0.017094018
+  - name: po_new_mark
+    outer:
+      serializedVersion: 2
+      x: 925
+      y: 976
+      width: 86
+      height: 48
+    inner:
+      serializedVersion: 2
+      x: 925
+      y: 976
+      width: 86
+      height: 48
+    paddingLeft: 0
+    paddingRight: 0
+    paddingTop: 0
+    paddingBottom: 0
+  mCoordinates: 0
+  mPixelSize: 1
+  mReplacement: {fileID: 0}
+--- !u!1001 &100100000
+Prefab:
+  serializedVersion: 2
+  m_ObjectHideFlags: 1
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 147589}
+  m_IsPrefabParent: 1
+  m_IsExploded: 0
