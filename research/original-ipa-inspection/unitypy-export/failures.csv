@@ -1,0 +1,12 @@
+source,path_id,type,name,error
+unity default resources,10103,Texture2D,Font Texture,export ValueError: No image data found
+unity default resources,10200,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10202,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10203,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10204,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10205,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10206,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10207,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10208,Mesh,,read ValueError: read_u8 out of bounds
+unity default resources,10209,Mesh,,read ValueError: read_u8 out of bounds
+sharedassets3.assets,8,AudioClip,kasha,export ValueError: AudioClip exposed no embedded samples

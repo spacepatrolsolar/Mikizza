@@ -1,0 +1,142 @@
+Shader "miku_toon" {
+Properties {
+ _InkSize ("Ink Size", Range(0.0001,0.01)) = 0.00012
+ _DiffuseSampler ("Diffuse", 2D) = "white" {}
+ _InkSampler ("Ink Color Texture", 2D) = "white" {}
+}
+SubShader { 
+ Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+ Pass {
+  Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+  ZTest Less
+  Cull Front
+Program "vp" {
+SubProgram "gles " {
+"!!GLES
+#define SHADER_API_GLES 1
+#define tex2D texture2D
+
+
+#ifdef VERTEX
+#define gl_ProjectionMatrix glstate_matrix_projection
+uniform mat4 glstate_matrix_projection;
+#define gl_ModelViewMatrix glstate_matrix_modelview0
+uniform mat4 glstate_matrix_modelview0;
+
+varying lowp vec2 xlv_TEXCOORD0;
+uniform highp float _InkSize;
+
+
+attribute vec4 _glesMultiTexCoord0;
+attribute vec3 _glesNormal;
+attribute vec4 _glesVertex;
+void main ()
+{
+  lowp vec2 tmpvar_1;
+  mediump float normalScale_2;
+  mediump float distToCamera_3;
+  lowp float baseSize_4;
+  highp vec4 tmpvar_5;
+  tmpvar_5.w = 0.0;
+  tmpvar_5.xyz = normalize(_glesNormal);
+  highp vec4 tmpvar_6;
+  tmpvar_6 = (gl_ModelViewMatrix * _glesVertex);
+  highp float tmpvar_7;
+  tmpvar_7 = (gl_ProjectionMatrix * tmpvar_6).z;
+  baseSize_4 = tmpvar_7;
+  highp float tmpvar_8;
+  tmpvar_8 = clamp ((sqrt(dot (tmpvar_6, tmpvar_6)) / 1.1), 0.0, 1.0);
+  distToCamera_3 = tmpvar_8;
+  mediump float tmpvar_9;
+  tmpvar_9 = mix (0.1, 1.0, distToCamera_3);
+  highp float tmpvar_10;
+  tmpvar_10 = (tmpvar_9 * _InkSize);
+  normalScale_2 = tmpvar_10;
+  highp vec2 tmpvar_11;
+  tmpvar_11 = _glesMultiTexCoord0.xy;
+  tmpvar_1 = tmpvar_11;
+  gl_Position = (gl_ProjectionMatrix * (tmpvar_6 + ((normalScale_2 * (gl_ModelViewMatrix * normalize(tmpvar_5))) * baseSize_4)));
+  xlv_TEXCOORD0 = tmpvar_1;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying lowp vec2 xlv_TEXCOORD0;
+uniform sampler2D _InkSampler;
+void main ()
+{
+  highp vec4 tmpvar_1;
+  lowp vec4 tmpvar_2;
+  tmpvar_2 = texture2D (_InkSampler, xlv_TEXCOORD0);
+  tmpvar_1 = tmpvar_2;
+  gl_FragData[0] = tmpvar_1;
+}
+
+
+
+#endif"
+}
+}
+Program "fp" {
+SubProgram "gles " {
+"!!GLES"
+}
+}
+ }
+ Pass {
+  Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+  Cull Off
+Program "vp" {
+SubProgram "gles " {
+"!!GLES
+#define SHADER_API_GLES 1
+#define tex2D texture2D
+
+
+#ifdef VERTEX
+#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
+uniform mat4 glstate_matrix_mvp;
+
+varying lowp vec2 xlv_TEXCOORD0;
+
+attribute vec4 _glesMultiTexCoord0;
+attribute vec4 _glesVertex;
+void main ()
+{
+  lowp vec2 tmpvar_1;
+  highp vec2 tmpvar_2;
+  tmpvar_2 = _glesMultiTexCoord0.xy;
+  tmpvar_1 = tmpvar_2;
+  gl_Position = (gl_ModelViewProjectionMatrix * _glesVertex);
+  xlv_TEXCOORD0 = tmpvar_1;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying lowp vec2 xlv_TEXCOORD0;
+uniform sampler2D _DiffuseSampler;
+void main ()
+{
+  gl_FragData[0] = texture2D (_DiffuseSampler, xlv_TEXCOORD0);
+}
+
+
+
+#endif"
+}
+}
+Program "fp" {
+SubProgram "gles " {
+"!!GLES"
+}
+}
+ }
+}
+Fallback "VertexLit"
+}

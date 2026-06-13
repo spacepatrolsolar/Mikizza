@@ -1,0 +1,52 @@
+Unity object type counts
+GameObject: 862
+Transform: 862
+MonoBehaviour: 717
+MonoScript: 294
+Shader: 96
+BoxCollider: 57
+Texture2D: 52
+Mesh: 48
+MeshRenderer: 42
+MeshFilter: 42
+Camera: 29
+Material: 21
+TextAsset: 15
+OcclusionCullingSettings: 13
+GUILayer: 13
+RenderSettings: 13
+FlareLayer: 13
+HaloManager: 13
+LightmapSettings: 13
+NavMeshSettings: 13
+PreloadData: 13
+Rigidbody: 10
+GUIText: 3
+ParticleSystem: 3
+ParticleSystemRenderer: 3
+AudioListener: 2
+MeshCollider: 2
+PlayerSettings: 1
+InputManager: 1
+TagManager: 1
+AudioManager: 1
+ScriptMapper: 1
+MonoManager: 1
+GraphicsSettings: 1
+TimeManager: 1
+Unknown (71): 1
+DelayedCallManager: 1
+PhysicsManager: 1
+BuildSettings: 1
+QualitySettings: 1
+ResourceManager: 1
+NetworkManager: 1
+MasterServerInterface: 1
+NavMeshProjectSettings: 1
+Font: 1
+AudioClip: 1
+Light: 1
+
+Exported Unity objects: 201
+Copied loose assets: 367
+Failures: 11

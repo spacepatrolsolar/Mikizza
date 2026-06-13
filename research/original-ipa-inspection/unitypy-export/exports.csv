@@ -1,0 +1,202 @@
+source,path_id,type,name,output
+resources.assets,1,Texture2D,reflect,textures/reflect.png
+resources.assets,2,Texture2D,reflect,textures/reflect-2.png
+resources.assets,3,Texture2D,shadow,textures/shadow.png
+resources.assets,4,Shader,Unlit - Transparent Colored (SoftClip),shaders/Unlit_-_Transparent_Colored__SoftClip_.shader.txt
+resources.assets,5,Shader,Unlit - Transparent Colored (Packed) (HardClip),shaders/Unlit_-_Transparent_Colored__Packed___HardClip_.shader.txt
+resources.assets,6,Shader,Unlit - Depth,shaders/Unlit_-_Depth.shader.txt
+resources.assets,7,Shader,Unlit - Transparent Colored (Packed) (SoftClip),shaders/Unlit_-_Transparent_Colored__Packed___SoftClip_.shader.txt
+resources.assets,8,Shader,,shaders/resources.assets_Shader_8.shader.txt
+resources.assets,9,Shader,Unlit - Additive Colored,shaders/Unlit_-_Additive_Colored.shader.txt
+resources.assets,10,Shader,Unlit - Transparent Colored (AlphaClip),shaders/Unlit_-_Transparent_Colored__AlphaClip_.shader.txt
+resources.assets,11,Shader,Unlit - Transparent Colored (Packed) (AlphaClip) ,shaders/Unlit_-_Transparent_Colored__Packed___AlphaClip_.shader.txt
+resources.assets,12,Shader,Unlit - Transparent Colored Overlay,shaders/Unlit_-_Transparent_Colored_Overlay.shader.txt
+resources.assets,13,Shader,,shaders/resources.assets_Shader_13.shader.txt
+resources.assets,14,Shader,Unlit - Depth Cutout,shaders/Unlit_-_Depth_Cutout.shader.txt
+resources.assets,15,Shader,,shaders/resources.assets_Shader_15.shader.txt
+resources.assets,16,Shader,,shaders/resources.assets_Shader_16.shader.txt
+resources.assets,17,Shader,,shaders/resources.assets_Shader_17.shader.txt
+resources.assets,18,Shader,SysFontUnlitTransparent,shaders/SysFontUnlitTransparent.shader.txt
+resources.assets,19,Shader,Unlit - Transparent Colored (HardClip),shaders/Unlit_-_Transparent_Colored__HardClip_.shader.txt
+resources.assets,20,Shader,Unlit - Transparent Colored (Packed),shaders/Unlit_-_Transparent_Colored__Packed_.shader.txt
+resources.assets,21,Shader,Unlit - Masked Colored,shaders/Unlit_-_Masked_Colored.shader.txt
+unity default resources,1,Shader,Normal-DiffuseFast,shaders/Normal-DiffuseFast.shader.txt
+unity default resources,2,Shader,Normal-Bumped,shaders/Normal-Bumped.shader.txt
+unity default resources,3,Shader,Normal-Glossy,shaders/Normal-Glossy.shader.txt
+unity default resources,4,Shader,Normal-BumpSpec,shaders/Normal-BumpSpec.shader.txt
+unity default resources,5,Shader,Normal-DiffuseDetail,shaders/Normal-DiffuseDetail.shader.txt
+unity default resources,6,Shader,Normal-VertexLit,shaders/Normal-VertexLit.shader.txt
+unity default resources,7,Shader,Normal-Diffuse,shaders/Normal-Diffuse.shader.txt
+unity default resources,8,Shader,Normal-Parallax,shaders/Normal-Parallax.shader.txt
+unity default resources,9,Shader,Normal-ParallaxSpec,shaders/Normal-ParallaxSpec.shader.txt
+unity default resources,10,Shader,Illumin-Diffuse,shaders/Illumin-Diffuse.shader.txt
+unity default resources,11,Shader,Illumin-Bumped,shaders/Illumin-Bumped.shader.txt
+unity default resources,12,Shader,Illumin-Glossy,shaders/Illumin-Glossy.shader.txt
+unity default resources,13,Shader,Illumin-BumpSpec,shaders/Illumin-BumpSpec.shader.txt
+unity default resources,14,Shader,Illumin-VertexLit,shaders/Illumin-VertexLit.shader.txt
+unity default resources,15,Shader,Illumin-Parallax,shaders/Illumin-Parallax.shader.txt
+unity default resources,16,Shader,Illumin-ParallaxSpec,shaders/Illumin-ParallaxSpec.shader.txt
+unity default resources,20,Shader,Reflect-Diffuse,shaders/Reflect-Diffuse.shader.txt
+unity default resources,21,Shader,Reflect-Bumped,shaders/Reflect-Bumped.shader.txt
+unity default resources,22,Shader,Reflect-Glossy,shaders/Reflect-Glossy.shader.txt
+unity default resources,23,Shader,Reflect-BumpSpec,shaders/Reflect-BumpSpec.shader.txt
+unity default resources,24,Shader,Reflect-VertexLit,shaders/Reflect-VertexLit.shader.txt
+unity default resources,25,Shader,Reflect-BumpNolight,shaders/Reflect-BumpNolight.shader.txt
+unity default resources,26,Shader,Reflect-BumpVertexLit,shaders/Reflect-BumpVertexLit.shader.txt
+unity default resources,27,Shader,Reflect-Parallax,shaders/Reflect-Parallax.shader.txt
+unity default resources,28,Shader,Reflect-ParallaxSpec,shaders/Reflect-ParallaxSpec.shader.txt
+unity default resources,30,Shader,Alpha-Diffuse,shaders/Alpha-Diffuse.shader.txt
+unity default resources,31,Shader,Alpha-Bumped,shaders/Alpha-Bumped.shader.txt
+unity default resources,32,Shader,Alpha-Glossy,shaders/Alpha-Glossy.shader.txt
+unity default resources,33,Shader,Alpha-BumpSpec,shaders/Alpha-BumpSpec.shader.txt
+unity default resources,34,Shader,Alpha-VertexLit,shaders/Alpha-VertexLit.shader.txt
+unity default resources,35,Shader,Alpha-Parallax,shaders/Alpha-Parallax.shader.txt
+unity default resources,36,Shader,Alpha-ParallaxSpec,shaders/Alpha-ParallaxSpec.shader.txt
+unity default resources,50,Shader,AlphaTest-VertexLit,shaders/AlphaTest-VertexLit.shader.txt
+unity default resources,51,Shader,AlphaTest-Diffuse,shaders/AlphaTest-Diffuse.shader.txt
+unity default resources,52,Shader,AlphaTest-Bumped,shaders/AlphaTest-Bumped.shader.txt
+unity default resources,53,Shader,AlphaTest-Glossy,shaders/AlphaTest-Glossy.shader.txt
+unity default resources,54,Shader,AlphaTest-BumpSpec,shaders/AlphaTest-BumpSpec.shader.txt
+unity default resources,60,Shader,Shadow-ScreenBlur,shaders/Shadow-ScreenBlur.shader.txt
+unity default resources,61,Shader,Camera-DepthTexture,shaders/Camera-DepthTexture.shader.txt
+unity default resources,62,Shader,Camera-DepthNormalTexture,shaders/Camera-DepthNormalTexture.shader.txt
+unity default resources,63,Shader,Internal-PrePassLighting,shaders/Internal-PrePassLighting.shader.txt
+unity default resources,64,Shader,Internal-PrePassCollectShadows,shaders/Internal-PrePassCollectShadows.shader.txt
+unity default resources,65,Shader,Internal-CombineDepthNormals,shaders/Internal-CombineDepthNormals.shader.txt
+unity default resources,66,Shader,Internal-BlitCopy,shaders/Internal-BlitCopy.shader.txt
+unity default resources,67,Shader,Shadow-ScreenBlurRotated,shaders/Shadow-ScreenBlurRotated.shader.txt
+unity default resources,68,Shader,Internal-Clear,shaders/Internal-Clear.shader.txt
+unity default resources,100,Shader,,shaders/unity_default_resources_Shader_100.shader.txt
+unity default resources,101,Shader,Flare,shaders/Flare.shader.txt
+unity default resources,102,Shader,Internal-Flare,shaders/Internal-Flare.shader.txt
+unity default resources,103,Shader,skybox cubed,shaders/skybox_cubed.shader.txt
+unity default resources,104,Shader,Skybox,shaders/Skybox.shader.txt
+unity default resources,105,Shader,Internal-Halo,shaders/Internal-Halo.shader.txt
+unity default resources,200,Shader,Particle Add,shaders/Particle_Add.shader.txt
+unity default resources,201,Shader,Particle AddMultiply,shaders/Particle_AddMultiply.shader.txt
+unity default resources,202,Shader,Particle AddSmooth,shaders/Particle_AddSmooth.shader.txt
+unity default resources,203,Shader,Particle Alpha Blend,shaders/Particle_Alpha_Blend.shader.txt
+unity default resources,205,Shader,Particle Multiply,shaders/Particle_Multiply.shader.txt
+unity default resources,206,Shader,Particle MultiplyDouble,shaders/Particle_MultiplyDouble.shader.txt
+unity default resources,207,Shader,Particle Premultiply Blend,shaders/Particle_Premultiply_Blend.shader.txt
+unity default resources,208,Shader,Particle VertexLit Blended,shaders/Particle_VertexLit_Blended.shader.txt
+unity default resources,9000,Shader,Internal-GUITextureClip,shaders/Internal-GUITextureClip.shader.txt
+unity default resources,9001,Shader,Internal-GUITextureClipText,shaders/Internal-GUITextureClipText.shader.txt
+unity default resources,9002,Shader,Internal-GUITexture,shaders/Internal-GUITexture.shader.txt
+unity default resources,9003,Shader,Internal-GUITextureBlit,shaders/Internal-GUITextureBlit.shader.txt
+unity default resources,10001,Texture2D,Soft,textures/Soft.png
+unity default resources,10101,Shader,Font,shaders/Font.shader.txt
+unity default resources,10300,Texture2D,Default-Particle,textures/Default-Particle.png
+unity default resources,10400,Texture2D,UnityWatermark-small,textures/UnityWatermark-small.png
+unity default resources,10401,Texture2D,EscToExit_back,textures/EscToExit_back.png
+unity default resources,10402,Texture2D,EscToExit_Text,textures/EscToExit_Text.png
+unity default resources,10403,Texture2D,UnitySplash,textures/UnitySplash.png
+unity default resources,10404,Texture2D,UnitySplash2,textures/UnitySplash2.png
+unity default resources,10405,Texture2D,UnitySplash3,textures/UnitySplash3.png
+unity default resources,10406,Texture2D,UnitySplashBack,textures/UnitySplashBack.png
+unity default resources,10407,Texture2D,UnityWatermark-trial,textures/UnityWatermark-trial.png
+unity default resources,10408,Texture2D,UnityWatermark-beta,textures/UnityWatermark-beta.png
+unity default resources,10409,Texture2D,UnityWatermark-edu,textures/UnityWatermark-edu.png
+unity default resources,10410,Texture2D,UnityWatermark-dev,textures/UnityWatermark-dev.png
+unity default resources,10411,Texture2D,WarningSign,textures/WarningSign.png
+unity default resources,10412,Texture2D,UnityWatermark-DebugFlashPlayer,textures/UnityWatermark-DebugFlashPlayer.png
+unity default resources,10413,Texture2D,UnityWatermark-proto,textures/UnityWatermark-proto.png
+unity default resources,10414,Texture2D,UnityWatermarkPlugin-beta,textures/UnityWatermarkPlugin-beta.png
+unity default resources,10500,Shader,VertexLit,shaders/VertexLit.shader.txt
+unity default resources,10501,Shader,WavingGrass,shaders/WavingGrass.shader.txt
+unity default resources,10502,Shader,WavingGrassBillboard,shaders/WavingGrassBillboard.shader.txt
+unity default resources,10503,Shader,AddPass,shaders/AddPass.shader.txt
+unity default resources,10505,Shader,FirstPass,shaders/FirstPass.shader.txt
+unity default resources,10507,Shader,BillboardTree,shaders/BillboardTree.shader.txt
+unity default resources,10512,Shader,AlphaTest-SoftEdgeUnlit,shaders/AlphaTest-SoftEdgeUnlit.shader.txt
+unity default resources,11001,Texture2D,box,textures/box.png
+unity default resources,11002,Texture2D,button active,textures/button_active.png
+unity default resources,11003,Texture2D,button hover,textures/button_hover.png
+unity default resources,11004,Texture2D,button on hover,textures/button_on_hover.png
+unity default resources,11005,Texture2D,button on,textures/button_on.png
+unity default resources,11006,Texture2D,button,textures/button.png
+unity default resources,11007,Texture2D,horizontal scrollbar thumb,textures/horizontal_scrollbar_thumb.png
+unity default resources,11008,Texture2D,horizontal scrollbar,textures/horizontal_scrollbar.png
+unity default resources,11009,Texture2D,horizontalslider,textures/horizontalslider.png
+unity default resources,11010,Texture2D,slider thumb active,textures/slider_thumb_active.png
+unity default resources,11011,Texture2D,slider thumb,textures/slider_thumb.png
+unity default resources,11012,Texture2D,slidert humb hover,textures/slidert_humb_hover.png
+unity default resources,11013,Texture2D,toggle active,textures/toggle_active.png
+unity default resources,11014,Texture2D,toggle hover,textures/toggle_hover.png
+unity default resources,11015,Texture2D,toggle on hover,textures/toggle_on_hover.png
+unity default resources,11016,Texture2D,toggle on,textures/toggle_on.png
+unity default resources,11017,Texture2D,toggle on active,textures/toggle_on_active.png
+unity default resources,11018,Texture2D,toggle,textures/toggle.png
+unity default resources,11019,Texture2D,vertical scrollbar thumb,textures/vertical_scrollbar_thumb.png
+unity default resources,11020,Texture2D,vertical scrollbar,textures/vertical_scrollbar.png
+unity default resources,11021,Texture2D,verticalslider,textures/verticalslider.png
+unity default resources,11022,Texture2D,window on,textures/window_on.png
+unity default resources,11023,Texture2D,window,textures/window.png
+unity default resources,11024,Texture2D,textfield,textures/textfield.png
+unity default resources,11025,Texture2D,textfield on,textures/textfield_on.png
+unity default resources,11026,Texture2D,textfield hover,textures/textfield_hover.png
+sharedassets1.assets,10,Texture2D,white_light,textures/white_light.png
+sharedassets1.assets,11,Texture2D,star1,textures/star1.png
+sharedassets1.assets,12,Shader,Mobile-Particle-Add,shaders/Mobile-Particle-Add.shader.txt
+sharedassets1.assets,13,Shader,Unlit-Normal,shaders/Unlit-Normal.shader.txt
+sharedassets1.assets,14,Shader,,shaders/sharedassets1.assets_Shader_14.shader.txt
+sharedassets1.assets,15,Shader,RenderVideoBackground,shaders/RenderVideoBackground.shader.txt
+sharedassets1.assets,16,Shader,Unlit - Transparent Colored,shaders/Unlit_-_Transparent_Colored.shader.txt
+sharedassets1.assets,17,TextAsset,Music5,text-assets/Music5.bytes
+sharedassets1.assets,18,TextAsset,Music8,text-assets/Music8.bytes
+sharedassets1.assets,19,TextAsset,Domino,text-assets/Domino.bytes
+sharedassets1.assets,20,TextAsset,SixRandom,text-assets/SixRandom.bytes
+sharedassets1.assets,21,TextAsset,Music7,text-assets/Music7.bytes
+sharedassets1.assets,22,TextAsset,Music4,text-assets/Music4.bytes
+sharedassets1.assets,23,TextAsset,Music6,text-assets/Music6.bytes
+sharedassets1.assets,24,TextAsset,Music1,text-assets/Music1.bytes
+sharedassets1.assets,25,TextAsset,Music3,text-assets/Music3.bytes
+sharedassets1.assets,26,TextAsset,Music2,text-assets/Music2.bytes
+sharedassets2.assets,4,Texture2D,CommonAtlas,textures/CommonAtlas.png
+sharedassets2.assets,5,TextAsset,Japanese,text-assets/Japanese.bytes
+sharedassets3.assets,7,Shader,,shaders/sharedassets3.assets_Shader_7.shader.txt
+sharedassets4.assets,4,Texture2D,TutHighAtlas,textures/TutHighAtlas.png
+sharedassets4.assets,5,Texture2D,TutLowAtlas,textures/TutLowAtlas.png
+sharedassets6.assets,2,TextAsset,fb,text-assets/fb.bytes
+sharedassets6.assets,3,TextAsset,tw,text-assets/tw.bytes
+sharedassets7.assets,2,TextAsset,fbi,text-assets/fbi.bytes
+sharedassets7.assets,3,TextAsset,twi,text-assets/twi.bytes
+level0,1,Mesh,,meshes/level0_Mesh_1.obj
+level0,2,Mesh,,meshes/level0_Mesh_2.obj
+level0,3,Mesh,,meshes/level0_Mesh_3.obj
+level0,4,Mesh,,meshes/level0_Mesh_4.obj
+level0,5,Mesh,,meshes/level0_Mesh_5.obj
+level0,6,Mesh,,meshes/level0_Mesh_6.obj
+level0,7,Mesh,,meshes/level0_Mesh_7.obj
+level0,8,Mesh,,meshes/level0_Mesh_8.obj
+level0,9,Mesh,,meshes/level0_Mesh_9.obj
+level0,10,Mesh,,meshes/level0_Mesh_10.obj
+level0,11,Mesh,,meshes/level0_Mesh_11.obj
+level0,12,Mesh,,meshes/level0_Mesh_12.obj
+level1,1,Mesh,,meshes/level1_Mesh_1.obj
+level1,2,Mesh,,meshes/level1_Mesh_2.obj
+level1,3,Mesh,,meshes/level1_Mesh_3.obj
+level1,4,Mesh,,meshes/level1_Mesh_4.obj
+level1,5,Mesh,,meshes/level1_Mesh_5.obj
+level1,6,Mesh,,meshes/level1_Mesh_6.obj
+level1,7,Mesh,,meshes/level1_Mesh_7.obj
+level1,8,Mesh,,meshes/level1_Mesh_8.obj
+level1,9,Mesh,,meshes/level1_Mesh_9.obj
+level1,10,Mesh,,meshes/level1_Mesh_10.obj
+level1,11,Mesh,,meshes/level1_Mesh_11.obj
+level1,12,Mesh,,meshes/level1_Mesh_12.obj
+level2,1,Mesh,,meshes/level2_Mesh_1.obj
+level2,2,Mesh,,meshes/level2_Mesh_2.obj
+level2,3,Mesh,,meshes/level2_Mesh_3.obj
+level2,4,Mesh,,meshes/level2_Mesh_4.obj
+level2,5,Mesh,,meshes/level2_Mesh_5.obj
+level2,6,Mesh,,meshes/level2_Mesh_6.obj
+level2,7,Mesh,,meshes/level2_Mesh_7.obj
+level2,8,Mesh,,meshes/level2_Mesh_8.obj
+level2,9,Mesh,,meshes/level2_Mesh_9.obj
+level2,10,Mesh,,meshes/level2_Mesh_10.obj
+level2,11,Mesh,,meshes/level2_Mesh_11.obj
+level2,12,Mesh,,meshes/level2_Mesh_12.obj
+level2,13,Mesh,,meshes/level2_Mesh_13.obj
+level2,14,Mesh,,meshes/level2_Mesh_14.obj
+level2,15,Mesh,,meshes/level2_Mesh_15.obj

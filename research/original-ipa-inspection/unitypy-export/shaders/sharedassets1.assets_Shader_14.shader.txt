@@ -1,0 +1,68 @@
+Shader "miku_alpha" {
+Properties {
+ _Alpha ("Alpha", Range(0,1)) = 0.2
+ _DiffuseSampler ("Diffuse", 2D) = "white" {}
+}
+SubShader { 
+ Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+ Pass {
+  Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+  ZTest Less
+  Blend SrcAlpha OneMinusSrcAlpha
+Program "vp" {
+SubProgram "gles " {
+"!!GLES
+#define SHADER_API_GLES 1
+#define tex2D texture2D
+
+
+#ifdef VERTEX
+#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
+uniform mat4 glstate_matrix_mvp;
+
+varying lowp vec2 xlv_TEXCOORD0;
+
+attribute vec4 _glesMultiTexCoord0;
+attribute vec4 _glesVertex;
+void main ()
+{
+  lowp vec2 tmpvar_1;
+  highp vec2 tmpvar_2;
+  tmpvar_2 = _glesMultiTexCoord0.xy;
+  tmpvar_1 = tmpvar_2;
+  gl_Position = (gl_ModelViewProjectionMatrix * _glesVertex);
+  xlv_TEXCOORD0 = tmpvar_1;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying lowp vec2 xlv_TEXCOORD0;
+uniform highp float _Alpha;
+uniform sampler2D _DiffuseSampler;
+void main ()
+{
+  lowp vec4 tmpvar_1;
+  tmpvar_1 = texture2D (_DiffuseSampler, xlv_TEXCOORD0);
+  highp vec4 tmpvar_2;
+  tmpvar_2.xyz = tmpvar_1.xyz;
+  tmpvar_2.w = (_Alpha * tmpvar_1.z);
+  gl_FragData[0] = tmpvar_2;
+}
+
+
+
+#endif"
+}
+}
+Program "fp" {
+SubProgram "gles " {
+"!!GLES"
+}
+}
+ }
+}
+Fallback "VertexLit"
+}

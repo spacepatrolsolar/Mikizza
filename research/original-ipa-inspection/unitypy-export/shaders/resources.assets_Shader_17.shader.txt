@@ -1,0 +1,65 @@
+Shader "miku_toon_auto" {
+Properties {
+ _InkSize ("Ink Size", Range(0.0001,0.01)) = 0.00012
+ _DiffuseSampler ("Diffuse", 2D) = "white" {}
+}
+SubShader { 
+ Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+ Pass {
+  Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+  ZTest Less
+  Cull Front
+ }
+ Pass {
+  Tags { "LIGHTMODE"="ForwardBase" "QUEUE"="Geometry" }
+Program "vp" {
+SubProgram "gles " {
+"!!GLES
+#define SHADER_API_GLES 1
+#define tex2D texture2D
+
+
+#ifdef VERTEX
+#define gl_ModelViewProjectionMatrix glstate_matrix_mvp
+uniform mat4 glstate_matrix_mvp;
+
+varying lowp vec2 xlv_TEXCOORD1;
+
+attribute vec4 _glesMultiTexCoord0;
+attribute vec4 _glesVertex;
+void main ()
+{
+  lowp vec2 tmpvar_1;
+  highp vec2 tmpvar_2;
+  tmpvar_2 = _glesMultiTexCoord0.xy;
+  tmpvar_1 = tmpvar_2;
+  gl_Position = (gl_ModelViewProjectionMatrix * _glesVertex);
+  xlv_TEXCOORD1 = tmpvar_1;
+}
+
+
+
+#endif
+#ifdef FRAGMENT
+
+varying lowp vec2 xlv_TEXCOORD1;
+uniform sampler2D _DiffuseSampler;
+void main ()
+{
+  gl_FragData[0] = texture2D (_DiffuseSampler, xlv_TEXCOORD1);
+}
+
+
+
+#endif"
+}
+}
+Program "fp" {
+SubProgram "gles " {
+"!!GLES"
+}
+}
+ }
+}
+Fallback "VertexLit"
+}
