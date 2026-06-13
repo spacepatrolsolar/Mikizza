@@ -26,7 +26,7 @@ What was exported:
 - `unitypy-export/textures`: 51 PNG textures from Unity asset files.
 - `unitypy-export/shaders`: 96 Unity shader source files.
 - `unitypy-export/text-assets`: 15 Unity text assets.
-- `unitypy-export/loose`: 288 loose app resources copied from the bundle, including PNGs, audio, video, plists, strings, nibs, QCAR/Vuforia AR data, and the SQLite database.
+- `unitypy-export/loose`: 367 loose app resources copied from the bundle, including PNGs, audio, video, plists, strings, nibs, QCAR/Vuforia AR data, and the SQLite database.
 - `decompiled-csharp`: decompiled `Assembly-CSharp.dll`.
 - `decompiled-firstpass`: decompiled `Assembly-CSharp-firstpass.dll`.
 - `decompiled-unityscript`: decompiled `Assembly-UnityScript.dll`.
@@ -44,3 +44,7 @@ Useful report files:
 - `unitypy-export/exports.csv`: every exported Unity object and output path.
 - `unitypy-export/failures.csv`: read/export failures and their exact error text.
 - `unitypy-export/loose-assets.csv`: loose bundle resources copied into the output.
+
+Next pass:
+
+- See `tooling-next-pass.md` for the follow-up extraction plan, including AssetRipper version triage, Rosetta/x64 considerations, alternative Unity asset tools, and manual extraction options.
